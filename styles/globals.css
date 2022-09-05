@@ -1,26 +1,22 @@
 html,
+
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Roboto Condensed;
+}
+.backgroundimage{
+  background-image: url('../public/assets/backgroundpic.jpg')
+}
+.backgroundimage2{
+  background-image: url('https://cdn.shopify.com/s/files/1/0254/9822/2645/articles/Light-Medium-Dark-Roast-Beans-2500_2500x.jpg?v=1620192727');
+}
+.missonvisonbackground{
+  background-image: url("https://c1.wallpaperflare.com/preview/495/9/146/coffee-coffee-tree-fruit-plantation.jpg");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
