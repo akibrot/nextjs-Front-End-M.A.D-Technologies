@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import Link from 'next/link'
 function HomeAbout() {
   return (
     <div className="flex items-end justify-end bg-[#F3F1E7] relative mb-12 pb-12 ">
     <div className="absolute top-[2rem] boxsh  shadow-[10px_10px_rgb(129,1,2)] left-20 w-[50%] bg-red-700 mt-10  h-[110%] mb-10  flex items-end justify-center">
-        <img src="/imagehome.png" alt="" className=" h-[100%] w-[100%] " />
+        <Image loader={()=>"/imagehome.png"} src="/imagehome.png" alt="" height={"100%"} width={"100%"} layout="fill" />
         
     </div>
     <div className="w-2/4 flex flex-col mt-12 p-10 pl-40">

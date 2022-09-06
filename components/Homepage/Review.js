@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaArrowLeft, FaArrowRight, FaQuoteLeft, FaUser } from 'react-icons/fa'
 function Review() {
     return <div className="flex flex-col items-center justify-center bg-[#F3F1E7] mt-16 mb-10">
@@ -12,9 +13,10 @@ function Review() {
         <div className="flex flex-row gap-4  items-center justify-center h-[10rem] mt-2">
         <div className="flex items-center justify-center cursor-pointer uppercase gap-2"><FaArrowLeft/>  prev</div>
 
-            <div className=" rounded-[50%] bg-red-800  flex items-center justify-center object-cover ">
-                {/* <img  src="/user.jpg" alt="" srcset="" className="  "   /> */}
-          <img src="/user.jpg" alt="" className=" h-24  rounded-[50%] w-24 border-[3px] border-red-900" />
+            <div className=" rounded-[50%] w-28 h-28  bg-red-800  flex items-center justify-center relative ">
+                <div className='p-2 border-red-900 border-2 border-solid'>
+                <Image loader={()=>'/user1.jpg'} src="/user1.jpg" alt="" srcset="" className=" rounded-[51%]  " layout='fill'     />
+                </div>
 
             </div>
         <div className="flex items-center cursor-pointer uppercase gap-2">next<FaArrowRight/> </div>

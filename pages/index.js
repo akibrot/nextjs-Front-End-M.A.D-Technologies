@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import Footer from '../components/Footer'
 import HomeAbout from '../components/Homepage/HomeAbout'
 import Landing from '../components/Homepage/Landing'
@@ -37,13 +35,7 @@ export default function Home() {
 
     <div className=" h-[110vh] w-screen backgroundimage bg-no-repeat bg-cover  flex flex-col">
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        {/* <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" /> */}
         <title>homepage</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
       </Head>
       <NavBar />
       <Landing/>

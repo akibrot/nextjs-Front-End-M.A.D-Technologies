@@ -1,9 +1,13 @@
+import Image from "next/image"
+import { useEffect } from "react"
+
 function NewsCard({ data }) {
+    
     return (
         <div className="box w-[390px] h-[300px]  flex flex-col m-[0,auto] overflow-hidden">
-            <div className="img flex-[8]   " >
+            <div className="img flex-[8] bg-red-800  " >
                 <div className='h-[10px] w-[100%] '>
-                <img src={data.image}  height={10}/>
+                <Image loader={()=>data.image} src={data.image}  height={"59%"} width="100%" layout="responsive"/>
                 </div>
             </div>
 

@@ -1,10 +1,11 @@
+import Image from "next/image"
 
 function ProjectCards({data}) {
   return (
     <div className="relative w-[21rem] h-[29.1rem]  border-[c6c3af] border-[5px] border-solid  flex flex-col justify-end  items-center ">
                     <div className=" absolute left-0 top-0 h-[100%] w-[100%] z-0">
 
-                        <img src={data.image} alt="" className=" h-[28.4rem] w-[100%]" height={100} />
+                        <Image loader={()=>data.image} src={data.image} alt="" className=" h-[28.4rem] w-[100%]" height={100} width={"100%"} layout="fill"/>
                     </div>
                     <div className=" absolute left-0 top-0 h-[100%] w-[100%] bg-gradient-to-t from-[#000000cc]  to-[#01010171]">
                       

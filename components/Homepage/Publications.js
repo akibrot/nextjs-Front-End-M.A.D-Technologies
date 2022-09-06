@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 function Publications() {
   return (
@@ -5,7 +6,7 @@ function Publications() {
       <h1 className=" text-[40px] font-bold text-[#810102] font-[Roboto] ">Publications</h1>
       <div className="flex  mt-5 w-screen flex-row px-16">
         <div className="  flex-[5] h-[560px] mr-5 flex flex-col items-center justify-center relative z-0">
-          <img src="/imagehome.png" alt="" className=" h-[100%]  w-full" />
+          <Image loader={()=>'/imagehome.png'} src="/imagehome.png" alt="" className=" h-[100%]  w-full" width={"100"} layout="fill" />
 
           <div className=" absolute left-0 top-0 h-[100%] w-[100%] z-10 bg-gradient-to-l from-[#000000d5]  to-[#01010141]">
             <div className='flex flex-col text-white w-[40%] h-full float-right pr-10  text-start pt-14'>
@@ -28,7 +29,7 @@ function Publications() {
         </div>
         <div className=" flex-[5] flex flex-col items-center justify-center h-[560px] gap-5">
           <div className="box bg-black flex-[5] w-full relative ">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHUAoLPEzUC40Qzfs8c-rh3Nb7h7mJfginw&usqp=CAU" alt="" className='absolute w-full h-full' />
+            <Image loader={()=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHUAoLPEzUC40Qzfs8c-rh3Nb7h7mJfginw&usqp=CAU"} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHUAoLPEzUC40Qzfs8c-rh3Nb7h7mJfginw&usqp=CAU" alt="" className='absolute w-full h-full' width={"100%"} layout="fill"/>
 
             <div className=" absolute left-0 top-0 h-[100%] w-[100%] z-10 bg-gradient-to-l from-[#000000d5]  to-[#01010141]">
             <div className='flex flex-col text-white w-[40%] h-full float-right pr-10  text-start pt-14 justify-between'>
@@ -53,7 +54,8 @@ function Publications() {
           </div>
 
           <div className="box  flex-[5] w-full relative h-1/2 box-content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQkHjWQNJlREEsl67mbNPeDKMre-sPglQLQ&usqp=CAU" alt="" className='absolute w-full h-full' />
+            
+            <Image loader={()=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQkHjWQNJlREEsl67mbNPeDKMre-sPglQLQ&usqp=CAU"} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQkHjWQNJlREEsl67mbNPeDKMre-sPglQLQ&usqp=CAU" alt="" className='absolute w-full h-full' width={"100%"} layout="fill"/>
 
             <div className=" absolute left-0 top-0 h-[100%] w-[100%] z-10 bg-gradient-to-l from-[#000000d5]  to-[#01010141]">
             <div className='flex flex-col text-white w-[40%] h-full float-right pr-10  text-start pt-4 justify-around'>

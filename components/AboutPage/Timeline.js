@@ -3,7 +3,7 @@ import {useEffect} from "react";
 import "react-vertical-timeline-component/style.min.css";
 import AOS from "aos";
 import 'aos/dist/aos.css'
-import { data } from "autoprefixer";
+import Image from "next/image";
 function Timeline({ direction ,data}) {
 // love building my own timeline component ):3
     useEffect(() => {
@@ -27,8 +27,8 @@ function Timeline({ direction ,data}) {
                         <p className='py-10 font-roboto'>{data.date}</p>
                     </div>
                     <div data-aos={direction=="right"? "fade-right":"fade-left"} className={direction == "left" ? '  w-[400px] left-[160px] h-[300px]  absolute flex-col flex items-center justify-center' : '  w-[400px] right-[160px] h-[300px] flex-col absolute flex items-center justify-center'} >
-                        <div className="flex-[8] bg-red-200 w-full">
-                            <img src={data.image} alt="" srcset="" width={"100%"} />
+                        <div className="flex-[8]  w-full">
+                            <Image loader={()=>data.image} src={data.image} alt="" srcset="" width={400} height={300}/>
                         </div>
                         <div className="flex-[2] w-full font-bold flex items-end">
                             <p >{data.description}</p>

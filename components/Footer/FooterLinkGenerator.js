@@ -9,7 +9,7 @@ function FooterLinkGenerator({data}) {
     <div className="flex flex-col pl-2 text-sm gap-1 mt-2">
         {
             data.Links.map((links)=>{
-                return <Link href={links.to} >{links.title}</Link>
+                return <Link key={links.title} href={links.to} >{links.title}</Link>
             })
         }
        
