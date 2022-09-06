@@ -12,16 +12,16 @@ export async function getStaticProps() {
 }
 
 
-function NewsAndBlogs({ posts }) {
+function NewsAndBlogs(props) {
     const [data, setdata] = useState([])
     useEffect(() => {
         axios.get("https://fakestoreapi.com/products?limit=6").then((res) => {
-            console.log(res.data)
+            // console.log(res.data)
             setdata(res.data)
         }).catch((err) => {
             console.log(err)
         })
-        console.log(posts)
+        console.log(props.posts)
     }, [])
 
 
