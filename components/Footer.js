@@ -7,7 +7,7 @@ function Footer() {
 
     return (
         <div className="bg-[#590000] flex flex-row flex-wrap gap-2 w-screen text-xl  justify-between pt-16 text-white">
-            <div className="flex flex-col flex-[2.1] pl-20" >
+            <div className="flex flex-col flex-[2.1] md:pl-20 pl-16" >
                 <div className="text-white text-4xl flex ">
                     <p className="font-bold ">E</p>
                     <GiCircleClaws />
@@ -17,7 +17,7 @@ function Footer() {
 
                     Etiam at augue sit amet erat fringilla aliquet sed quis felis. Nunc sodales sapien vitae felis fringilla, quis auctor lectus vestibulum.
                 </p>
-                <div className="flex gap-5 w-fit h-8 flex-row mb-10 items-center justify-center ">
+                <div className="flex gap-5 w-fit h-8 flex-row  md:mb-10 mb-5 items-center justify-center ">
                     <div className="circle rounded-[50%] shadow-sm w-9 h-9 bg-red-800 flex items-center justify-center cursor-pointer"  >
                         <FaFacebook />
                     </div>
@@ -32,14 +32,14 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row  justify-between flex-[8] mt-0 mx-16'>
+            <div className='flex flex-row  flex-wrap md:flex-nowrap  justify-between flex-[8] mt-0 mx-16'>
                 {
                     FooterLinksDemoData.map((data) => {
                         return <FooterLinkGenerator key={data.id} data={data} />
                     })
                 }
             </div>
-            <div className="w-screen bg-[#450000] flex items-center justify-between px-16 text-[0.8rem] h-12 border-[1px] border-l-0 border-r-0  border-[rgba(255,255,255,.5)]">
+            <div className="mt-10 md:mt-0 w-screen bg-[#450000] flex items-center justify-between px-2 md:px-16 text-[0.8rem] h-12 border-[1px] border-l-0 border-r-0  border-[rgba(255,255,255,.5)]">
                 <p>
                     © ECFF 2022.
                 </p>

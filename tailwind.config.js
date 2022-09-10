@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */ 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,10 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        'hero':"'url(../public/assets/backgroundpic.jpg')"
-      }
+      backgroundImage: {
+        hero: "'url(../public/assets/backgroundpic.jpg')",
+      },
     },
+   
   },
   plugins: [],
-}
+};

@@ -39,7 +39,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <Landing/>
-      <div className="mt-[16rem] flex items-center justify-center gap-8 pb-20 ">
+      <div className="mt-16 md:mt-[15rem] flex md:flex-row flex-col items-center justify-center gap-8 pb-20 ">
         {
           DemoProjectcardData.map((data) => {
             return <ProjectCards key={data.id} data={data} />
