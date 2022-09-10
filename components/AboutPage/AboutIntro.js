@@ -3,10 +3,10 @@ import React from "react";
 
 function AboutIntro() {
   return (
-    <div className=" w-screen flex flex-row flex-wrap py-9 ">
-      <div className="flex-[5] bg-white ">
+    <div className=" w-screen flex flex-col md:flex-row flex-wrap py-9  ">
+      <div className="flex-[5] bg-white  ">
         <div className="p-20  font-[roboto condenced] ">
-          <div className="pl-12">
+          <div className="md:pl-12 ml-[-15px] md:ml-0">
             <h1 className="text-[#810102] text-5xl font-sans font-bold pb-5 ">
               We are ECFF
             </h1>
@@ -31,7 +31,7 @@ function AboutIntro() {
         </div>
       </div>
       <div className="flex-[5] flex items-start justify-start flex-col relative  ">
-        <div className="pt-20 pl-16  ">
+        <div className="md:pt-20 md:pl-16 px-5  ">
           <div className="w-fit shadow-[-10px_-10px_rgba(0,0,0,0.3)]">
             <Image
               loader={() =>
@@ -45,7 +45,7 @@ function AboutIntro() {
             />
           </div>
         </div>
-        <div className="absolute bottom-0 right-20 ml-15 mb-5  w-2/4 ">
+        <div className="hidden md:block absolute bottom-0 right-20 ml-15 mb-5  w-2/4 ">
           <div className="w-fit shadow-[10px_10px_rgba(0,0,0,0.3)]">
             <Image
               loader={() =>

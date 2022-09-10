@@ -3,7 +3,7 @@ import { FaTractor } from 'react-icons/fa'
 
 function IconPriceTitleGenerator({data,Icon}) {
   return (
-        <div className='flex px-10'>
+        <div className='flex px-10  md:m-0 '>
           <div className="flex justify-center items-center w-12">
           <Icon className="text-[#810102]" size={50}/>
           </div>

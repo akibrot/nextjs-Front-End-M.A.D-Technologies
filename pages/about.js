@@ -20,11 +20,11 @@ function AboutPage() {
       </Head>
       <div className='w-full backgroundimage2 h-2/3 bg-cover bg-no-repeat  bg-black'>
         <NavBar />
-        <div className='p-16 mb-10 text-5xl text-white font-sans font-bold'><h1>About us / Overview</h1></div>
+        <div className=' p-10 md:p-16 mb-10 text-5xl  text-white font-sans font-bold'><h1>About us / Overview</h1></div>
       </div>
       <AboutIntro />
       {/* Icon Price Title  */}
-      <div className='w-screen flex flex-row items-center justify-around pb-20 p-16 '>
+      <div className='w-screen flex flex-row flex-wrap md:gap-0 gap-8 items-center justify-around pb-20 p-16 '>
         {
           IconPriceTitle.map((data) => {
             return <IconPriceTitleGenerator key={data.id} data={data} Icon={data.icon} />
